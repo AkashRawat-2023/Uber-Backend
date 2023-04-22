@@ -12,7 +12,7 @@ public class Driver {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int driverId;
 
-    private String mobNo;
+    private String mobile;
 
     private String password;
 
@@ -26,9 +26,9 @@ public class Driver {
     public Driver() {
     }
 
-    public Driver(int driverId, String mobNo, String password, Cab cab, List<TripBooking> tripBookingList) {
+    public Driver(int driverId, String mobile, String password, Cab cab, List<TripBooking> tripBookingList) {
         this.driverId = driverId;
-        this.mobNo = mobNo;
+        this.mobile = mobile;
         this.password = password;
         this.cab = cab;
         this.tripBookingList = tripBookingList;
@@ -42,12 +42,12 @@ public class Driver {
         this.driverId = driverId;
     }
 
-    public String getMobNo() {
-        return mobNo;
+    public String getMobile() {
+        return mobile;
     }
 
-    public void setMobNo(String mobNo) {
-        this.mobNo = mobNo;
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
     }
 
     public String getPassword() {
